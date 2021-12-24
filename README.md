@@ -1,4 +1,6 @@
 # freJun
+gitURL :- https://github.com/aakashojha22/freJun
+HostedURL :- 
 1. Install all the dependency from <i>requirements.txt</i> .
 2. Install Postgresql.
 3. Fetch postgres data dump from **schema.sql**
