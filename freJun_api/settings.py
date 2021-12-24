@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os.path
 from pathlib import Path
-
+import  django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +24,8 @@ SECRET_KEY = 'django-insecure-aaz4c@%151im&^yn6+y34vnz@gi-9rn^@jp#m!f!(zijps6)7b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['fre-jun.herokuapp.com']
 
 # Application definition
 
@@ -95,13 +96,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql',
 
-        'NAME': 'postgres',
+        'NAME': 'dc947h5l69l6pc',
 
-        'USER': 'postgres',
+        'USER': 'wacwrwxyjyyjls',
 
-        'PASSWORD': 'admin',
+        'PASSWORD': 'c05304f5a70cb4f0720ac1b32f757ec5535a8742fce8435aeab73325e285182e',
 
-        'HOST': 'localhost',
+        'HOST': 'ec2-54-173-2-216.compute-1.amazonaws.com',
 
         'PORT': '5432',
 
@@ -146,7 +147,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+#django_heroku.settings(locals())
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
